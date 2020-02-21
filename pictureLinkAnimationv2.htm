@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manipulating Element Attributes</title>
+    <link rel="stylesheet" href="./../../style.css" />
+    <script type="text/javascript" src="./../../jquery-3.0.0.js"></script>
+    <script type="text/javascript">
+			$("document").ready(function()
+			{
+				document.getElementById("list1").style.display = "none";
+				document.getElementById("list2").style.display = "none";
+				document.getElementById("list3").style.display = "none";
+				document.getElementById("list4").style.display = "none";
+				document.getElementById("list5").style.display = "none";
+				
+				$("#grassPic").click(showList1);
+				$("#leafPic").click(showList2);
+				$("#springPic").click(showList3);
+				$("#waterPic").click(showList4);
+				$("#volcanoPic").click(showList5);
+        });
+		function showList1()
+		{
+			document.getElementById("list1").style.display = "block";
+			document.getElementById("list2").style.display = "none";
+			document.getElementById("list3").style.display = "none";
+			document.getElementById("list4").style.display = "none";
+			document.getElementById("list5").style.display = "none";
+		}
+		function showList2()
+		{
+			document.getElementById("list2").style.display = "block";
+			document.getElementById("list1").style.display = "none";
+			document.getElementById("list3").style.display = "none";
+			document.getElementById("list4").style.display = "none";
+			document.getElementById("list5").style.display = "none";
+		}
+		function showList3()
+		{
+			document.getElementById("list3").style.display = "block";
+			document.getElementById("list2").style.display = "none";
+			document.getElementById("list1").style.display = "none";
+			document.getElementById("list4").style.display = "none";
+			document.getElementById("list5").style.display = "none";
+		}
+		function showList4()
+		{
+			document.getElementById("list4").style.display = "block";
+			document.getElementById("list2").style.display = "none";
+			document.getElementById("list3").style.display = "none";
+			document.getElementById("list1").style.display = "none";
+			document.getElementById("list5").style.display = "none";
+		}
+		function showList5()
+		{
+			document.getElementById("list5").style.display = "block";
+			document.getElementById("list2").style.display = "none";
+			document.getElementById("list3").style.display = "none";
+			document.getElementById("list4").style.display = "none";
+			document.getElementById("list1").style.display = "none";
+		}
+    </script>
+    <style type="text/css">
+        img {
+            margin: 24px;
+            width: 250px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="example">
+		<img src="images/Grass.jpg" alt="Grass" id="grassPic"/>
+        <img src="images/Leaf.jpg" alt="Leaf" id="leafPic" />
+        <img src="images/Spring.jpg" alt="Spring" id="springPic" />
+        <img src="images/Water.jpg" alt="Water" id="waterPic"/>
+		<img src="images/Volcano.png" alt="Volcano" id="volcanoPic"/>
+    </div>
+		<div id="list1">
+			<a href="https://simple.wikipedia.org/wiki/Grass" target="_blank">Grass 1</a><br><br>
+			<a href="https://en.wikipedia.org/wiki/Poaceae" target="_blank">Grass 2</a><br><br>
+			<a href="https://en.wikipedia.org/wiki/Cortaderia_selloana" target="_blank">Grass 3</a><br><br>
+			<a href="https://en.wikipedia.org/wiki/Festuca" target="_blank">Grass 4</a><br><br>
+			<a href="https://en.wikipedia.org/wiki/Cynodon_dactylon" target="_blank">Grass 5</a><br><br>
+		</div>
+		<div id="list2">
+			<a href="https://naruto.fandom.com/wiki/Konohagakure" target="_blank">Leaf 1</a><br><br>
+			<a href="https://www.crwflags.com/fotw/flags/ca.html" target="_blank">Leaf 2</a><br><br>
+			<a href="https://www.friendsofthewildflowergarden.org/pages/plants/oakleafkey.html" target="_blank">Leaf 3</a><br><br>
+			<a href="https://www.webmd.com/vitamins/ai/ingredientmono-352/birch" target="_blank">Leaf 4</a><br><br>
+			<a href="https://www.wikihow.com/Identify-Hickory-Trees" target="_blank">Leaf 5</a><br><br>
+		</div>
+		<div id="list3">
+			<a href="http://justfunfacts.com/interesting-facts-about-spring/" target="_blank">Spring 1</a><br><br>
+			<a href="https://kidskonnect.com/holidays-seasons/spring/" target="_blank">Spring 2</a><br><br>
+			<a href="https://www.kidsplayandcreate.com/what-happens-in-spring-when-is-spring-spring-facts-for-kids/" target="_blank">Spring 3</a><br><br>
+			<a href="https://www.1800flowers.com/blog/floral-occasions-holidays/facts-about-spring/" target="_blank">Spring 4</a><br><br>
+			<a href="https://piperelectric.com/2015/04/24/12-interesting-facts-about-spring/" target="_blank">Spring 5</a><br><br>
+		</div>
+		<div id="list4">
+			<a href="https://www.seametrics.com/blog/water-facts/" target="_blank">Water 1</a><br><br>
+			<a href="https://www.espwaterproducts.com/water-facts/" target="_blank">Water 2</a><br><br>
+			<a href="https://www3.epa.gov/safewater/kids/waterfactsoflife.html" target="_blank">Water 3</a><br><br>
+			<a href="https://www.treehugger.com/clean-water/36-eye-opening-facts-about-water.html" target="_blank">Water 4</a><br><br>
+			<a href="http://savethewater.org/education-resources/water-facts/" target="_blank">Water 5</a><br><br>
+		</div>
+		<div id="list5">
+			<a href="http://www.sciencekids.co.nz/sciencefacts/earth/volcano.html" target="_blank">Volcano 1</a><br><br>
+			<a href="https://www.nationalgeographic.com/environment/natural-disasters/volcanoes/" target="_blank">Volcano 2</a><br><br>
+			<a href="https://www.dosomething.org/us/facts/11-facts-about-volcanoes" target="_blank">Volcano 3</a><br><br>
+			<a href="https://www.universetoday.com/32185/10-interesting-facts-about-volcanoes/" target="_blank">Volcano 4</a><br><br>
+			<a href="https://www.livescience.com/31774-amazing-volcano-facts.html" target="_blank">Volcano 5</a><br><br>
+		</div>
+</body>
+</html>
